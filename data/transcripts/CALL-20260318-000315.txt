@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:33] AGENT: Quillmere Service Center, this is Avery. How can I help?
+[00:40] CALLER: just wanted to confirm you have my mobile number
+[00:56] AGENT: I have the profile open. What should I confirm?
+[01:04] CALLER: just that you can reach me if something posts
+[01:11] AGENT: Try the app again later this afternoon and call back if it is still down.
+[01:14] AGENT: Thank you for calling Quillmere Service Center.
+[01:18] CALLER: okay um thanks

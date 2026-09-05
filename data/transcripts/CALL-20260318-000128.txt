@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:45] AGENT: Quillmere Service Center, this is Reese. How can I help?
+[00:50] CALLER: change my email on file the old one is shut down
+[00:57] AGENT: I can take the new address. I will repeat it back.
+[01:09] CALLER: please do I don't want a statement going to the old place
+[01:13] AGENT: I am documenting this and you should get a callback if it is not restored today.
+[01:20] AGENT: Thank you for calling Quillmere Service Center.
+[01:25] CALLER: that's all thanks

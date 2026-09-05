@@ -1,0 +1,10 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:25] AGENT: Quillmere Service Center, this is Sage. How can I help?
+[00:32] CALLER: nothing showing under accounts in the app
+[00:39] AGENT: Can you tell me whether the header loads or the whole page is blank?
+[00:45] CALLER: header is tehre balances are blank positions won't load
+[00:51] AGENT: Copy. I can see the accounts on my desktop tool.
+[01:02] CALLER: so it's the app then not my account missing right
+[01:10] CALLER: that's all thanks
+[01:15] AGENT: Try the app again later this afternoon and call back if it is still down.
+[01:23] AGENT: I noted the profile. Is there anything else?

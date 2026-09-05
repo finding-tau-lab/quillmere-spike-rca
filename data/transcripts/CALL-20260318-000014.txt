@@ -1,0 +1,10 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:18] AGENT: Quillmere Service Center, this is Sage. How can I help?
+[00:24] CALLER: statements page is empty can you see them on your side
+[00:38] AGENT: Can you tell me whether the header loads or the whole page is blank?
+[00:45] CALLER: header is there balances are blank positions won't load
+[00:53] AGENT: Copy. I can see teh accounts on my desktop tool.
+[01:00] CALLER: so it's teh app then not my account missing right
+[01:11] CALLER: that's all thanks
+[01:16] AGENT: I noted the profile. Is there anything else?
+[01:19] AGENT: Thank you for calling Quillmere Service Center.

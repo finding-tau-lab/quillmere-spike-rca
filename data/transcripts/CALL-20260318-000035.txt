@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:19] AGENT: Quillmere Service Center, this is Sage. How can I help?
+[00:27] CALLER: just wanted to confirm you have my mobile number
+[00:35] AGENT: I have the profile open. What should I confirm?
+[00:39] CALLER: just that you can reach me if something posts
+[00:44] AGENT: I noted the profile. Is there anything else?
+[00:47] AGENT: I am documenting this and you should get a callback if it is not restored today.
+[00:51] AGENT: Try the app again later this afternoon and call back if it is still down.

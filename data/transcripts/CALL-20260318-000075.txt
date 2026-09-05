@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:41] AGENT: Quillmere Service Center, this is Riley. How can I help?
+[00:50] CALLER: forgot password and the temporary password expired
+[01:02] AGENT: I can send a reset link to the email on file.
+[01:14] CALLER: okay please the last temporary password bounced
+[01:21] CALLER: okay um thanks
+[01:26] CALLER: that's all thanks
+[01:34] AGENT: I am documenting this and you should get a callback if it is not restored today.

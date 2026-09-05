@@ -1,0 +1,12 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:40] CALLER: um can I speak to a person please the menu is not helping
+[00:53] AGENT: Quillmere Service Center, this is Cameron. How can I help?
+[01:01] CALLER: portal says invalid user but it worked yesterday
+[01:10] AGENT: I am pulling up teh profile now. Are you on the mobile app or the website?
+[01:17] CALLER: mobile um it says try again later
+[01:27] AGENT: Understood. I am not seeing a completed password reset on our side.
+[01:33] CALLER: yeah I didn't finish a reset I just can't get in
+[01:39] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.
+[01:45] AGENT: Try the app again later this afternoon and call back if it is still down.
+[01:53] CALLER: that's all thanks
+[01:57] AGENT: I noted the profile. Is there anything else?

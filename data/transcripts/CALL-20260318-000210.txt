@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:22] AGENT: Quillmere Service Center, this is Reese. How can I help?
+[00:30] CALLER: question on billing the line item looks off
+[00:40] AGENT: Fee lines post on a cycle. I can note teh question for review.
+[00:52] CALLER: alright just wanted it flagged
+[01:02] AGENT: I am documenting this and you should get a callback if it is not restored today.
+[01:08] AGENT: Try the app again later this afternoon and call back if it is still down.
+[01:12] CALLER: okay um thanks

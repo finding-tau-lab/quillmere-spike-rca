@@ -1,0 +1,12 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:26] CALLER: um can I speak to a person please the menu is not helping
+[00:35] AGENT: Quillmere Service Center, this is Sage. How can I help?
+[00:41] CALLER: every time I try to sign in I get kicked out
+[00:48] AGENT: I am pulling up teh profile now. Are you on the mobile app or the website?
+[00:56] CALLER: mobile um it says try again later
+[01:03] AGENT: Understood. I am not seeing a completed password reset on our side.
+[01:08] CALLER: yeah I didn't finish a reset I just can't get in
+[01:19] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.
+[01:26] CALLER: okay um thanks
+[01:34] AGENT: I am documenting this and you should get a callback if it is not restored today.
+[01:39] AGENT: Try the app again later this afternoon and call back if it is still down.

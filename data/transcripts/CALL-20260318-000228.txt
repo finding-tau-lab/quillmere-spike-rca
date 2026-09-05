@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:36] AGENT: Quillmere Service Center, this is Quinn. How can I help?
+[00:44] CALLER: I need to reset my password the email never showed
+[00:57] AGENT: I can send a reset link to the email on file.
+[01:07] CALLER: okay please the last temporary password bounced
+[01:15] AGENT: I noted the profile. Is there anything else?
+[01:19] AGENT: I am documenting this and you should get a callback if it is not restored today.
+[01:25] CALLER: that's all thanks

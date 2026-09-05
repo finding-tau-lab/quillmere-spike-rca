@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:39] CALLER: um can I speak to a person please the menu is not helping
+[00:53] AGENT: Quillmere Service Center, this is Quinn. How can I help?
+[00:57] CALLER: the app won't open on my phone since last night
+[01:08] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?
+[01:18] CALLER: okay um thanks
+[01:22] CALLER: that's all thanks
+[01:30] AGENT: Try the app again later this afternoon and call back if it is still down.

@@ -1,0 +1,542 @@
+{
+  "packet_version": "1.0",
+  "generated_at": "2026-09-04T21:54:55.074729+00:00",
+  "disclaimer": "SYNTHETIC DATA. Fictional firm. No real customers.",
+  "alert": {
+    "alert_date": "2026-03-18",
+    "query_id": "Q_DIGITAL_ACCESS",
+    "query_name": "Digital access failure",
+    "query_description": "Caller cannot log in to the client portal or mobile app, hits an error, or the app will not load.",
+    "query_logic": "FIRST90(AND(OR(LIKE(\"can't log in\"),LIKE(\"login failed\"),LIKE(\"app won't open\"),LIKE(\"error code\")),NOTLIKE(\"password reset complete\")))",
+    "hits_on_day": 107,
+    "notes": "Single-day spike. Intra-day burst used for sampling."
+  },
+  "query_logic_guide": {
+    "dialect": "quillmere-demo-v1",
+    "operators": {
+      "LIKE": "Phrase or close spoken variant is present.",
+      "NOTLIKE": "Exclude calls where this phrase is present.",
+      "AND": "All children must match.",
+      "OR": "Any child may match.",
+      "FIRST90": "Inner condition must occur in the first 90 seconds of the call.",
+      "NEAR": "Terms occur within n seconds of each other."
+    },
+    "how_to_read": "Evaluate the tree inside-out. FIRST90 limits where in the call a match counts. NOTLIKE is for false-positive cuts, not for finding the problem."
+  },
+  "burst": {
+    "method": "Kleinberg burst detection on 5-minute baskets of all calls that day",
+    "basket_minutes": 5,
+    "window_start_ts": "2026-03-18T10:35:00-04:00",
+    "window_end_ts": "2026-03-18T11:10:00-04:00",
+    "sample_size": 30,
+    "sample_rule": "Sample from burst baskets, not global top-N by duration"
+  },
+  "lexicon": {
+    "stopwords": [
+      "um",
+      "uh",
+      "like",
+      "you know",
+      "okay",
+      "alright",
+      "thank you",
+      "please hold"
+    ],
+    "top_keywords": [
+      "this",
+      "mobile",
+      "reset",
+      "thank",
+      "again",
+      "profile",
+      "later",
+      "there",
+      "sign",
+      "just",
+      "can't",
+      "thanks"
+    ],
+    "top_phrases": [
+      "quillmere service",
+      "service center",
+      "thank calling",
+      "calling quillmere",
+      "again later",
+      "ivr thank",
+      "agent quillmere",
+      "how can",
+      "can help",
+      "help caller",
+      "agent pulling",
+      "profile now"
+    ]
+  },
+  "sampled_calls": [
+    {
+      "call_id": "CALL-20260318-000118",
+      "call_start_ts": "2026-03-18T10:36:54.346545-04:00",
+      "site": "Miami",
+      "queue": "DIGITAL",
+      "duration_sec": 382,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:19] AGENT: Quillmere Service Center, this is Cameron. How can I help?\n[00:29] CALLER: every time I try to sign in I get kicked out\n[00:35] AGENT: I am pulling up teh profile now. Are you on the mobile app or the website?\n[00:47] CALLER: mobile um it says try again later\n[00:56] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:04] CALLER: yeah I didn't finish a reset I just can't get in\n[01:08] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:18] AGENT: Thank you for calling Quillmere Service Center.\n[01:23] CALLER: okay um thanks\n[01:31] CALLER: that's all thanks\n"
+    },
+    {
+      "call_id": "CALL-20260318-000064",
+      "call_start_ts": "2026-03-18T10:37:00.303659-04:00",
+      "site": "Miami",
+      "queue": "SERVICE",
+      "duration_sec": 109,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "app won't open",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:37] AGENT: Quillmere Service Center, this is Hayden. How can I help?\n[00:45] CALLER: the app won't open on my phone since last night\n[00:50] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:01] CALLER: mobile um it says try again later\n[01:06] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:18] CALLER: yeah I didn't finish a reset I just can't get in\n[01:22] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:33] CALLER: that's all thanks\n[01:39] AGENT: Thank you for calling Quillmere Service Center.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000175",
+      "call_start_ts": "2026-03-18T10:38:15.962254-04:00",
+      "site": "Miami",
+      "queue": "ADVISOR_SUPPORT",
+      "duration_sec": 163,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "login failed",
+        "error code",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:33] AGENT: Quillmere Service Center, this is Riley. How can I help?\n[00:42] CALLER: login failed again this morning error code something\n[00:52] AGENT: I am pulling up teh profile now. Are you on the mobile app or the website?\n[00:58] CALLER: mobile um it says try again later\n[01:09] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:20] CALLER: yeah I didn't finish a reset I just can't get in\n[01:25] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:33] CALLER: okay um thanks\n[01:38] CALLER: that's all thanks\n[01:42] AGENT: I am documenting this and you should get a callback if it is not restored today.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000180",
+      "call_start_ts": "2026-03-18T10:39:11.871404-04:00",
+      "site": "Miami",
+      "queue": "ADVISOR_SUPPORT",
+      "duration_sec": 87,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS",
+        "Q_SPEAK_TO_PERSON"
+      ],
+      "highlighted_terms": [
+        "can't log in",
+        "speak to a person"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:24] CALLER: um can I speak to a person please the menu is not helping\n[00:30] AGENT: Quillmere Service Center, this is Avery. How can I help?\n[00:39] CALLER: I can't log in to the app it just spins\n[00:55] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:07] CALLER: okay um thanks\n[01:12] CALLER: that's all thanks\n[01:18] AGENT: Try the app again later this afternoon and call back if it is still down.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000105",
+      "call_start_ts": "2026-03-18T10:40:13.721314-04:00",
+      "site": "Los Angeles",
+      "queue": "DIGITAL",
+      "duration_sec": 174,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS",
+        "Q_SPEAK_TO_PERSON"
+      ],
+      "highlighted_terms": [
+        "app won't open",
+        "speak to a person",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:22] CALLER: um can I speak to a person please the menu is not helping\n[00:35] AGENT: Quillmere Service Center, this is Sage. How can I help?\n[00:42] CALLER: the app won't open on my phone since last night\n[00:55] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:06] CALLER: mobile um it says try again later\n[01:16] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:25] CALLER: yeah I didn't finish a reset I just can't get in\n[01:29] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:40] AGENT: I am documenting this and you should get a callback if it is not restored today.\n[01:45] CALLER: okay um thanks\n[01:48] CALLER: that's all thanks\n"
+    },
+    {
+      "call_id": "CALL-20260318-000137",
+      "call_start_ts": "2026-03-18T10:40:16.679645-04:00",
+      "site": "Atlanta",
+      "queue": "DIGITAL",
+      "duration_sec": 178,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS",
+        "Q_SPEAK_TO_PERSON"
+      ],
+      "highlighted_terms": [
+        "speak to a person",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:45] CALLER: um can I speak to a person please the menu is not helping\n[00:53] AGENT: Quillmere Service Center, this is Morgan. How can I help?\n[01:01] CALLER: every time I try to sign in I get kicked out\n[01:11] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:20] CALLER: mobile um it says try again later\n[01:29] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:38] CALLER: yeah I didn't finish a reset I just can't get in\n[01:45] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:52] CALLER: that's all thanks\n[01:57] AGENT: I am documenting this and you should get a callback if it is not restored today.\n[02:01] AGENT: I noted the profile. Is there anything else?\n"
+    },
+    {
+      "call_id": "CALL-20260318-000073",
+      "call_start_ts": "2026-03-18T10:40:56.590211-04:00",
+      "site": "Atlanta",
+      "queue": "DIGITAL",
+      "duration_sec": 231,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "can't log in",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:44] AGENT: Quillmere Service Center, this is Quinn. How can I help?\n[00:49] CALLER: I can't log in to the app it just spins\n[00:57] AGENT: I am pulling up teh profile now. Are you on the mobile app or the website?\n[01:04] CALLER: mobile um it says try again later\n[01:15] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:26] CALLER: yeah I didn't finish a reset I just can't get in\n[01:30] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:34] AGENT: I am documenting this and you should get a callback if it is not restored today.\n[01:42] CALLER: okay um thanks\n[01:49] AGENT: I noted the profile. Is there anything else?\n"
+    },
+    {
+      "call_id": "CALL-20260318-000058",
+      "call_start_ts": "2026-03-18T10:45:33.735505-04:00",
+      "site": "Atlanta",
+      "queue": "DIGITAL",
+      "duration_sec": 129,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "app won't open",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:44] AGENT: Quillmere Service Center, this is Riley. How can I help?\n[00:48] CALLER: the app won't open on my phone since last night\n[01:01] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:09] CALLER: mobile um it says try again later\n[01:17] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:26] CALLER: yeah I didn't finish a reset I just can't get in\n[01:37] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:43] CALLER: okay um thanks\n[01:51] AGENT: I am documenting this and you should get a callback if it is not restored today.\n[01:57] AGENT: I noted the profile. Is there anything else?\n"
+    },
+    {
+      "call_id": "CALL-20260318-000046",
+      "call_start_ts": "2026-03-18T10:47:33.360817-04:00",
+      "site": "Miami",
+      "queue": "SERVICE",
+      "duration_sec": 188,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "can't log in",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:32] AGENT: Quillmere Service Center, this is Reese. How can I help?\n[00:39] CALLER: I can't log in to the app it just spins\n[00:45] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[00:52] CALLER: mobile um it says try again later\n[01:02] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:10] CALLER: yeah I didn't finish a reset I just can't get in\n[01:21] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:29] CALLER: okay um thanks\n[01:36] AGENT: Thank you for calling Quillmere Service Center.\n[01:44] AGENT: I am documenting this and you should get a callback if it is not restored today.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000221",
+      "call_start_ts": "2026-03-18T10:49:05.349534-04:00",
+      "site": "Atlanta",
+      "queue": "DIGITAL",
+      "duration_sec": 140,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "invalid user",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:35] AGENT: Quillmere Service Center, this is Casey. How can I help?\n[00:45] CALLER: portal says invalid user but it worked yesterday\n[00:56] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:08] CALLER: mobile um it says try again later\n[01:19] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:30] CALLER: yeah I didn't finish a reset I just can't get in\n[01:42] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:50] AGENT: I am documenting this and you should get a callback if it is not restored today.\n[01:58] CALLER: that's all thanks\n[02:01] AGENT: Try the app again later this afternoon and call back if it is still down.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000045",
+      "call_start_ts": "2026-03-18T10:49:30.644855-04:00",
+      "site": "Miami",
+      "queue": "DIGITAL",
+      "duration_sec": 178,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS",
+        "Q_SPEAK_TO_PERSON"
+      ],
+      "highlighted_terms": [
+        "app won't open",
+        "speak to a person",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:45] CALLER: um can I speak to a person please the menu is not helping\n[00:58] AGENT: Quillmere Service Center, this is Casey. How can I help?\n[01:03] CALLER: the app won't open on my phone since last night\n[01:11] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:17] CALLER: mobile um it says try again later\n[01:22] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:30] CALLER: yeah I didn't finish a reset I just can't get in\n[01:35] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:44] CALLER: that's all thanks\n[01:48] AGENT: I am documenting this and you should get a callback if it is not restored today.\n[01:53] AGENT: Try the app again later this afternoon and call back if it is still down.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000076",
+      "call_start_ts": "2026-03-18T10:49:32.518001-04:00",
+      "site": "Miami",
+      "queue": "ADVISOR_SUPPORT",
+      "duration_sec": 84,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:45] AGENT: Quillmere Service Center, this is Casey. How can I help?\n[00:49] CALLER: every time I try to sign in I get kicked out\n[00:59] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:10] CALLER: that's all thanks\n[01:16] AGENT: Try the app again later this afternoon and call back if it is still down.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000237",
+      "call_start_ts": "2026-03-18T10:51:28.620837-04:00",
+      "site": "Los Angeles",
+      "queue": "SERVICE",
+      "duration_sec": 204,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "login failed",
+        "error code",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:38] AGENT: Quillmere Service Center, this is Casey. How can I help?\n[00:45] CALLER: login failed again this morning error code something\n[00:55] AGENT: I am pulling up teh profile now. Are you on the mobile app or the website?\n[01:00] CALLER: mobile um it says try again later\n[01:07] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:17] CALLER: yeah I didn't finish a reset I just can't get in\n[01:25] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:30] CALLER: okay um thanks\n[01:35] CALLER: that's all thanks\n[01:43] AGENT: Thank you for calling Quillmere Service Center.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000236",
+      "call_start_ts": "2026-03-18T10:51:54.320262-04:00",
+      "site": "Los Angeles",
+      "queue": "SERVICE",
+      "duration_sec": 491,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS",
+        "Q_SPEAK_TO_PERSON"
+      ],
+      "highlighted_terms": [
+        "can't log in",
+        "speak to a person",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:23] CALLER: um can I speak to a person please the menu is not helping\n[00:36] AGENT: Quillmere Service Center, this is Hayden. How can I help?\n[00:44] CALLER: I can't log in to the app it just spins\n[00:53] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[00:59] CALLER: mobile um it says try again later\n[01:11] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:18] CALLER: yeah I didn't finish a reset I just can't get in\n[01:30] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:42] CALLER: that's all thanks\n[01:50] AGENT: I noted the profile. Is there anything else?\n[01:58] AGENT: I am documenting this and you should get a callback if it is not restored today.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000202",
+      "call_start_ts": "2026-03-18T10:52:07.182784-04:00",
+      "site": "Miami",
+      "queue": "DIGITAL",
+      "duration_sec": 310,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:38] AGENT: Quillmere Service Center, this is Sage. How can I help?\n[00:42] CALLER: every time I try to sign in I get kicked out\n[00:58] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:02] CALLER: mobile um it says try again later\n[01:12] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:20] CALLER: yeah I didn't finish a reset I just can't get in\n[01:31] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:41] AGENT: Try the app again later this afternoon and call back if it is still down.\n[01:48] AGENT: I am documenting this and you should get a callback if it is not restored today.\n[01:53] AGENT: Thank you for calling Quillmere Service Center.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000100",
+      "call_start_ts": "2026-03-18T10:53:41.476124-04:00",
+      "site": "Atlanta",
+      "queue": "DIGITAL",
+      "duration_sec": 148,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "login failed",
+        "error code",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:41] AGENT: Quillmere Service Center, this is Quinn. How can I help?\n[00:50] CALLER: login failed again this morning error code something\n[01:00] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:11] CALLER: mobile um it says try again later\n[01:17] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:22] CALLER: yeah I didn't finish a reset I just can't get in\n[01:29] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:34] AGENT: Thank you for calling Quillmere Service Center.\n[01:41] CALLER: okay um thanks\n[01:48] AGENT: I noted the profile. Is there anything else?\n"
+    },
+    {
+      "call_id": "CALL-20260318-000297",
+      "call_start_ts": "2026-03-18T10:53:56.674728-04:00",
+      "site": "Miami",
+      "queue": "ADVISOR_SUPPORT",
+      "duration_sec": 364,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "app won't open",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:40] AGENT: Quillmere Service Center, this is Casey. How can I help?\n[00:50] CALLER: the app won't open on my phone since last night\n[01:04] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:13] CALLER: mobile um it says try again later\n[01:17] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:28] CALLER: yeah I didn't finish a reset I just can't get in\n[01:39] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:45] AGENT: I am documenting this and you should get a callback if it is not restored today.\n[01:53] CALLER: okay um thanks\n[01:59] AGENT: I noted the profile. Is there anything else?\n"
+    },
+    {
+      "call_id": "CALL-20260318-000270",
+      "call_start_ts": "2026-03-18T10:55:00.544646-04:00",
+      "site": "Miami",
+      "queue": "DIGITAL",
+      "duration_sec": 315,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "app won't open",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:39] AGENT: Quillmere Service Center, this is Casey. How can I help?\n[00:44] CALLER: the app won't open on my phone since last night\n[00:50] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[00:57] CALLER: mobile um it says try again later\n[01:03] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:09] CALLER: yeah I didn't finish a reset I just can't get in\n[01:20] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:32] AGENT: Try the app again later this afternoon and call back if it is still down.\n[01:38] AGENT: Thank you for calling Quillmere Service Center.\n[01:41] AGENT: I noted the profile. Is there anything else?\n"
+    },
+    {
+      "call_id": "CALL-20260318-000292",
+      "call_start_ts": "2026-03-18T10:55:00.721924-04:00",
+      "site": "Miami",
+      "queue": "DIGITAL",
+      "duration_sec": 132,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:33] AGENT: Quillmere Service Center, this is Cameron. How can I help?\n[00:37] CALLER: every time I try to sign in I get kicked out\n[00:44] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[00:50] CALLER: mobile um it says try again later\n[00:57] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:09] CALLER: yeah I didn't finish a reset I just can't get in\n[01:17] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:21] CALLER: okay um thanks\n[01:28] AGENT: Thank you for calling Quillmere Service Center.\n[01:36] AGENT: I noted the profile. Is there anything else?\n"
+    },
+    {
+      "call_id": "CALL-20260318-000122",
+      "call_start_ts": "2026-03-18T10:55:52.948379-04:00",
+      "site": "Miami",
+      "queue": "DIGITAL",
+      "duration_sec": 174,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS",
+        "Q_SPEAK_TO_PERSON"
+      ],
+      "highlighted_terms": [
+        "speak to a person",
+        "invalid user",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:33] CALLER: um can I speak to a person please the menu is not helping\n[00:42] AGENT: Quillmere Service Center, this is Morgan. How can I help?\n[00:49] CALLER: portal says invalid user but it worked yesterday\n[01:01] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:05] CALLER: mobile um it says try again later\n[01:17] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:28] CALLER: yeah I didn't finish a reset I just can't get in\n[01:38] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:43] AGENT: Try the app again later this afternoon and call back if it is still down.\n[01:46] AGENT: I am documenting this and you should get a callback if it is not restored today.\n[01:53] CALLER: okay um thanks\n"
+    },
+    {
+      "call_id": "CALL-20260318-000113",
+      "call_start_ts": "2026-03-18T10:56:04.271478-04:00",
+      "site": "Miami",
+      "queue": "DIGITAL",
+      "duration_sec": 508,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:33] AGENT: Quillmere Service Center, this is Jordan. How can I help?\n[00:41] CALLER: every time I try to sign in I get kicked out\n[00:51] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:02] CALLER: mobile um it says try again later\n[01:10] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:19] CALLER: yeah I didn't finish a reset I just can't get in\n[01:27] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:31] AGENT: Thank you for calling Quillmere Service Center.\n[01:34] CALLER: okay um thanks\n[01:41] CALLER: that's all thanks\n"
+    },
+    {
+      "call_id": "CALL-20260318-000194",
+      "call_start_ts": "2026-03-18T10:56:45.454509-04:00",
+      "site": "Miami",
+      "queue": "SERVICE",
+      "duration_sec": 254,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS",
+        "Q_SPEAK_TO_PERSON"
+      ],
+      "highlighted_terms": [
+        "can't log in",
+        "speak to a person",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:27] CALLER: um can I speak to a person please the menu is not helping\n[00:35] AGENT: Quillmere Service Center, this is Riley. How can I help?\n[00:39] CALLER: I can't log in to the app it just spins\n[00:49] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[00:54] CALLER: mobile um it says try again later\n[01:05] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:17] CALLER: yeah I didn't finish a reset I just can't get in\n[01:24] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:33] AGENT: Try the app again later this afternoon and call back if it is still down.\n[01:37] AGENT: I noted the profile. Is there anything else?\n[01:41] AGENT: Thank you for calling Quillmere Service Center.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000171",
+      "call_start_ts": "2026-03-18T10:58:26.346185-04:00",
+      "site": "Atlanta",
+      "queue": "DIGITAL",
+      "duration_sec": 250,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "login failed",
+        "error code",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:44] AGENT: Quillmere Service Center, this is Sage. How can I help?\n[00:50] CALLER: login failed again this morning error code something\n[01:06] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:16] CALLER: mobile um it says try again later\n[01:22] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:26] CALLER: yeah I didn't finish a reset I just can't get in\n[01:34] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:45] CALLER: that's all thanks\n[01:51] CALLER: okay um thanks\n[01:58] AGENT: I am documenting this and you should get a callback if it is not restored today.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000085",
+      "call_start_ts": "2026-03-18T10:58:49.413466-04:00",
+      "site": "Los Angeles",
+      "queue": "DIGITAL",
+      "duration_sec": 467,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "app won't open",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:28] AGENT: Quillmere Service Center, this is Sage. How can I help?\n[00:34] CALLER: the app won't open on my phone since last night\n[00:45] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[00:54] CALLER: mobile um it says try again later\n[01:04] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:13] CALLER: yeah I didn't finish a reset I just can't get in\n[01:23] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:35] AGENT: Try the app again later this afternoon and call back if it is still down.\n[01:39] AGENT: I am documenting this and you should get a callback if it is not restored today.\n[01:46] AGENT: Thank you for calling Quillmere Service Center.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000156",
+      "call_start_ts": "2026-03-18T10:59:24.489655-04:00",
+      "site": "Atlanta",
+      "queue": "SERVICE",
+      "duration_sec": 165,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS",
+        "Q_SPEAK_TO_PERSON"
+      ],
+      "highlighted_terms": [
+        "speak to a person",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:19] CALLER: um can I speak to a person please the menu is not helping\n[00:30] AGENT: Quillmere Service Center, this is Casey. How can I help?\n[00:37] CALLER: every time I try to sign in I get kicked out\n[00:43] AGENT: I am pulling up teh profile now. Are you on the mobile app or the website?\n[00:53] CALLER: mobile um it says try again later\n[01:05] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:10] CALLER: yeah I didn't finish a reset I just can't get in\n[01:22] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:26] AGENT: Thank you for calling Quillmere Service Center.\n[01:29] CALLER: that's all thanks\n[01:34] AGENT: Try the app again later this afternoon and call back if it is still down.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000153",
+      "call_start_ts": "2026-03-18T11:01:35.114822-04:00",
+      "site": "Miami",
+      "queue": "DIGITAL",
+      "duration_sec": 248,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS",
+        "Q_SPEAK_TO_PERSON"
+      ],
+      "highlighted_terms": [
+        "app won't open",
+        "speak to a person",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:39] CALLER: um can I speak to a person please the menu is not helping\n[00:45] AGENT: Quillmere Service Center, this is Reese. How can I help?\n[00:51] CALLER: the app won't open on my phone since last night\n[01:00] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:08] CALLER: mobile um it says try again later\n[01:14] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:19] CALLER: yeah I didn't finish a reset I just can't get in\n[01:28] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:37] AGENT: I noted the profile. Is there anything else?\n[01:44] CALLER: that's all thanks\n[01:49] CALLER: okay um thanks\n"
+    },
+    {
+      "call_id": "CALL-20260318-000334",
+      "call_start_ts": "2026-03-18T11:02:24.026065-04:00",
+      "site": "Atlanta",
+      "queue": "SERVICE",
+      "duration_sec": 488,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "can't log in",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:43] AGENT: Quillmere Service Center, this is Reese. How can I help?\n[00:50] CALLER: I can't log in to the app it just spins\n[00:55] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:02] CALLER: mobile um it says try again later\n[01:14] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:19] CALLER: yeah I didn't finish a reset I just can't get in\n[01:30] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:42] AGENT: I am documenting this and you should get a callback if it is not restored today.\n[01:49] AGENT: Try the app again later this afternoon and call back if it is still down.\n[01:52] AGENT: Thank you for calling Quillmere Service Center.\n"
+    },
+    {
+      "call_id": "CALL-20260318-000310",
+      "call_start_ts": "2026-03-18T11:04:05.361948-04:00",
+      "site": "Los Angeles",
+      "queue": "SERVICE",
+      "duration_sec": 180,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS",
+        "Q_SPEAK_TO_PERSON"
+      ],
+      "highlighted_terms": [
+        "speak to a person",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:25] CALLER: um can I speak to a person please the menu is not helping\n[00:31] AGENT: Quillmere Service Center, this is Avery. How can I help?\n[00:40] CALLER: every time I try to sign in I get kicked out\n[00:54] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:06] CALLER: mobile um it says try again later\n[01:10] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:16] CALLER: yeah I didn't finish a reset I just can't get in\n[01:21] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:27] AGENT: Thank you for calling Quillmere Service Center.\n[01:33] AGENT: I noted the profile. Is there anything else?\n[01:36] CALLER: that's all thanks\n"
+    },
+    {
+      "call_id": "CALL-20260318-000199",
+      "call_start_ts": "2026-03-18T11:04:15.527375-04:00",
+      "site": "Miami",
+      "queue": "ADVISOR_SUPPORT",
+      "duration_sec": 422,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS",
+        "Q_SPEAK_TO_PERSON"
+      ],
+      "highlighted_terms": [
+        "app won't open",
+        "speak to a person",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:45] CALLER: um can I speak to a person please the menu is not helping\n[00:56] AGENT: Quillmere Service Center, this is Jordan. How can I help?\n[01:02] CALLER: the app won't open on my phone since last night\n[01:13] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?\n[01:21] CALLER: mobile um it says try again later\n[01:26] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:30] CALLER: yeah I didn't finish a reset I just can't get in\n[01:42] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:48] AGENT: Thank you for calling Quillmere Service Center.\n[01:56] AGENT: I noted the profile. Is there anything else?\n[02:04] CALLER: okay um thanks\n"
+    },
+    {
+      "call_id": "CALL-20260318-000092",
+      "call_start_ts": "2026-03-18T11:04:22.479132-04:00",
+      "site": "Miami",
+      "queue": "DIGITAL",
+      "duration_sec": 186,
+      "matched_query_ids": [
+        "Q_DIGITAL_ACCESS"
+      ],
+      "highlighted_terms": [
+        "invalid user",
+        "try again later"
+      ],
+      "transcript": "[00:00] IVR: Thank you for calling Quillmere Service Center.\n[00:38] AGENT: Quillmere Service Center, this is Quinn. How can I help?\n[00:45] CALLER: portal says invalid user but it worked yesterday\n[00:59] AGENT: I am pulling up teh profile now. Are you on the mobile app or the website?\n[01:11] CALLER: mobile um it says try again later\n[01:20] AGENT: Understood. I am not seeing a completed password reset on our side.\n[01:32] CALLER: yeah I didn't finish a reset I just can't get in\n[01:44] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.\n[01:50] AGENT: I am documenting this and you should get a callback if it is not restored today.\n[01:58] CALLER: okay um thanks\n[02:01] AGENT: Try the app again later this afternoon and call back if it is still down.\n"
+    }
+  ],
+  "copilot_prompt": "You are writing a 3-bullet RCA for Quillmere Service Center leadership about a speech-query spike.\n\nThis JSON is SYNTHETIC. Do not invent a real firm, vendor outage, or product not supported by the sampled transcripts.\n\nHow to read query_logic:\nUse query_logic_guide. Evaluate the tree inside-out. FIRST90 limits where in the call a match counts. NOTLIKE cuts false positives; it is not how you find the problem.\n\nHow to use lexicon:\nIgnore lexicon.stopwords. Treat lexicon.top_keywords and lexicon.top_phrases as clues, not conclusions.\n\nHow to use sampled_calls:\nTranscripts are evidence only. Quote or paraphrase what callers and agents actually said. Do not invent outages, error codes, or vendors that do not appear in the text.\n\nReturn only:\nBullet 1 \u2014 What changed in the calls (observable language / failure mode)\nBullet 2 \u2014 Most likely operational cause, hedged to the evidence\nBullet 3 \u2014 Recommended next action for the floor or digital team in the next 24 hours\nNo preamble. No extra sections."
+}

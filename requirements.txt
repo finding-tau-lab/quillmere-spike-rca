@@ -1,0 +1,4 @@
+pandas>=2.0
+numpy>=1.26
+# Optional warehouse stand-in. Flat files are source of truth.
+duckdb>=1.0

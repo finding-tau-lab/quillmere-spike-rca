@@ -1,0 +1,11 @@
+{
+  "disclaimer": "SYNTHETIC DATA. Fictional firm. No real customers.",
+  "alert_date": "2026-03-18",
+  "timezone": "America/New_York",
+  "window_start_ts": "2026-03-18T10:35:00-04:00",
+  "window_end_ts": "2026-03-18T12:10:00-04:00",
+  "story": "Overnight client-portal and mobile-app login failures became visible mid-morning. Floor volume burst as clients and advisors could not authenticate or see positions/statements in the app.",
+  "sample_size": 30,
+  "sample_rule": "Sample from Kleinberg burst baskets, not global top-N by duration",
+  "basket_minutes": 5
+}

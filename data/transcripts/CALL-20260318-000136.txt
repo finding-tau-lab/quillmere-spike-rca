@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:26] AGENT: Quillmere Service Center, this is Jordan. How can I help?
+[00:32] CALLER: I got in I think but I can't see my statement
+[00:39] AGENT: Can you tell me whether the header loads or the whole page is blank?
+[00:51] CALLER: header is there balances are blank positions won't load
+[00:56] CALLER: that's all thanks
+[00:59] AGENT: I am documenting this and you should get a callback if it is not restored today.
+[01:02] AGENT: Try the app again later this afternoon and call back if it is still down.

@@ -1,0 +1,10 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:30] CALLER: um can I speak to a person please the menu is not helping
+[00:42] AGENT: Quillmere Service Center, this is Cameron. How can I help?
+[00:51] CALLER: please transfer me I already tried the app
+[01:06] AGENT: You are talking to a person now. What did the menu send you through?
+[01:12] CALLER: digital help tehn it died I need a representative not a script
+[01:21] AGENT: I have you. Give me one moment.
+[01:32] AGENT: Thank you for calling Quillmere Service Center.
+[01:38] AGENT: I noted the profile. Is there anything else?
+[01:45] CALLER: that's all thanks

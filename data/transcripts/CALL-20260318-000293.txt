@@ -1,0 +1,10 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:38] AGENT: Quillmere Service Center, this is Jordan. How can I help?
+[00:44] CALLER: nothing showing under accounts in the app
+[00:57] AGENT: Can you tell me whether the header loads or the whole page is blank?
+[01:07] CALLER: header is there balances are blank positions won't load
+[01:11] AGENT: Copy. I can see teh accounts on my desktop tool.
+[01:16] CALLER: so it's the app then not my account missing right
+[01:20] CALLER: okay um thanks
+[01:28] AGENT: Try the app again later this afternoon and call back if it is still down.
+[01:33] AGENT: I am documenting this and you should get a callback if it is not restored today.

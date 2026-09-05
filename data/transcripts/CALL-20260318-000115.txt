@@ -1,0 +1,10 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:44] CALLER: um can I speak to a person please the menu is not helping
+[00:58] AGENT: Quillmere Service Center, this is Quinn. How can I help?
+[01:04] CALLER: positions won't load it's just a blank balance
+[01:20] AGENT: Can you tell me whether the header loads or the whole page is blank?
+[01:30] CALLER: header is there balances are blank positions won't load
+[01:41] AGENT: Copy. I can see the accounts on my desktop tool.
+[01:53] CALLER: so it's the app then not my account missing right
+[02:01] CALLER: okay um thanks
+[02:08] AGENT: I noted the profile. Is there anything else?

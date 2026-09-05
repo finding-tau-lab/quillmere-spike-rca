@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:40] CALLER: um can I speak to a person please the menu is not helping
+[00:50] AGENT: Quillmere Service Center, this is Reese. How can I help?
+[01:00] CALLER: please transfer me I already tried the app
+[01:15] AGENT: You are talking to a person now. What did the menu send you through?
+[01:25] CALLER: okay um thanks
+[01:33] CALLER: that's all thanks
+[01:40] AGENT: Thank you for calling Quillmere Service Center.

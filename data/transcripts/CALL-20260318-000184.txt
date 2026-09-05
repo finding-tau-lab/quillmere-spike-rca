@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:41] AGENT: Quillmere Service Center, this is Cameron. How can I help?
+[00:51] CALLER: question on billing the line item looks off
+[01:04] AGENT: Fee lines post on a cycle. I can note the question for review.
+[01:11] CALLER: alright just wanted it flagged
+[01:19] CALLER: that's all thanks
+[01:26] AGENT: Try the app again later this afternoon and call back if it is still down.
+[01:29] CALLER: okay um thanks

@@ -1,0 +1,12 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:26] CALLER: um can I speak to a person please the menu is not helping
+[00:37] AGENT: Quillmere Service Center, this is Hayden. How can I help?
+[00:41] CALLER: I can't log in to the app it just spins
+[00:53] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?
+[00:58] CALLER: mobile um it says try again later
+[01:07] AGENT: Understood. I am not seeing a completed password reset on our side.
+[01:13] CALLER: yeah I didn't finish a reset I just can't get in
+[01:23] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.
+[01:32] AGENT: Thank you for calling Quillmere Service Center.
+[01:39] CALLER: okay um thanks
+[01:45] AGENT: I noted the profile. Is there anything else?

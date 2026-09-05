@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:31] AGENT: Quillmere Service Center, this is Hayden. How can I help?
+[00:38] CALLER: calling about a confirmation I thought I would get
+[00:43] AGENT: I have the profile open. What should I confirm?
+[00:51] CALLER: just that you can reach me if something posts
+[01:03] AGENT: I noted the profile. Is there anything else?
+[01:11] AGENT: I am documenting this and you should get a callback if it is not restored today.
+[01:18] CALLER: that's all thanks

@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:20] AGENT: Quillmere Service Center, this is Sage. How can I help?
+[00:29] CALLER: question on billing the line item looks off
+[00:45] AGENT: Fee lines post on a cycle. I can note the question for review.
+[00:52] CALLER: alright just wanted it flagged
+[00:59] CALLER: that's all thanks
+[01:03] CALLER: okay um thanks
+[01:10] AGENT: I noted the profile. Is there anything else?

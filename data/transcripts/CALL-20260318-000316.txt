@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:36] AGENT: Quillmere Service Center, this is Jordan. How can I help?
+[00:46] CALLER: can you get a message to my advisor I need a callback
+[01:01] AGENT: I can request an advisor callback. What is the best number?
+[01:10] CALLER: the mobile on the profile is fine
+[01:18] AGENT: Thank you for calling Quillmere Service Center.
+[01:25] AGENT: I noted the profile. Is there anything else?
+[01:33] CALLER: that's all thanks

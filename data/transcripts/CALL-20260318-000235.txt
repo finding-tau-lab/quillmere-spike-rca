@@ -1,0 +1,9 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:22] AGENT: Quillmere Service Center, this is Reese. How can I help?
+[00:28] CALLER: representative please this is not a password question
+[00:34] AGENT: You are talking to a person now. What did the menu send you through?
+[00:38] CALLER: digital help then it died I need a representative not a script
+[00:47] AGENT: I have you. Give me one moment.
+[00:52] CALLER: that's all thanks
+[00:58] AGENT: I noted the profile. Is there anything else?
+[01:06] AGENT: Try the app again later this afternoon and call back if it is still down.

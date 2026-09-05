@@ -1,0 +1,10 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:18] CALLER: um can I speak to a person please the menu is not helping
+[00:26] AGENT: Quillmere Service Center, this is Sage. How can I help?
+[00:33] CALLER: representative please this is not a password question
+[00:38] AGENT: You are talking to a person now. What did teh menu send you through?
+[00:42] CALLER: digital help then it died I need a representative not a script
+[00:52] AGENT: I have you. Give me one moment.
+[00:57] AGENT: I noted the profile. Is there anything else?
+[01:01] CALLER: that's all thanks
+[01:07] CALLER: okay um thanks

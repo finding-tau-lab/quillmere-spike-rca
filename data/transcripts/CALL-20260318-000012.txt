@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:21] AGENT: Quillmere Service Center, this is Hayden. How can I help?
+[00:25] CALLER: checking on an ACH I submitted yesterday
+[00:40] AGENT: I see a transfer request in a pending state. I cannot release it from this line.
+[00:52] CALLER: so I wait? the app just sat there
+[00:58] AGENT: I am documenting this and you should get a callback if it is not restored today.
+[01:01] AGENT: Thank you for calling Quillmere Service Center.
+[01:08] AGENT: I noted the profile. Is there anything else?

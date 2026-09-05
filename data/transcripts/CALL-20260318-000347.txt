@@ -1,0 +1,10 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:44] AGENT: Quillmere Service Center, this is Casey. How can I help?
+[00:51] CALLER: statements page is empty can you see them on your side
+[01:07] AGENT: Can you tell me whether the header loads or the whole page is blank?
+[01:12] CALLER: header is there balances are blank positions won't load
+[01:23] AGENT: Copy. I can see teh accounts on my desktop tool.
+[01:29] CALLER: so it's the app then not my account missing right
+[01:35] AGENT: I noted the profile. Is there anything else?
+[01:40] AGENT: I am documenting this and you should get a callback if it is not restored today.
+[01:48] CALLER: that's all thanks

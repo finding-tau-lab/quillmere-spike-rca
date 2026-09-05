@@ -1,0 +1,12 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:39] CALLER: um can I speak to a person please the menu is not helping
+[00:47] AGENT: Quillmere Service Center, this is Jordan. How can I help?
+[00:57] CALLER: every time I try to sign in I get kicked out
+[01:07] AGENT: I am pulling up the profile now. Are you on the mobile app or the website?
+[01:13] CALLER: mobile um it says try again later
+[01:22] AGENT: Understood. I am not seeing a completed password reset on our side.
+[01:32] CALLER: yeah I didn't finish a reset I just can't get in
+[01:44] AGENT: There looks to be a wider sign-in issue this morning. Let me document this.
+[01:50] AGENT: I noted the profile. Is there anything else?
+[01:55] AGENT: Try the app again later this afternoon and call back if it is still down.
+[02:00] AGENT: I am documenting this and you should get a callback if it is not restored today.

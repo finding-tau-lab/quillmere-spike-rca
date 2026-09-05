@@ -1,0 +1,10 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:23] AGENT: Quillmere Service Center, this is Avery. How can I help?
+[00:27] CALLER: positions won't load it's just a blank balance
+[00:36] AGENT: Can you tell me whether the header loads or the whole page is blank?
+[00:46] CALLER: header is there balances are blank positions won't load
+[00:53] AGENT: Copy. I can see teh accounts on my desktop tool.
+[01:00] CALLER: so it's the app then not my account missing right
+[01:07] CALLER: that's all thanks
+[01:10] CALLER: okay um thanks
+[01:16] AGENT: I noted the profile. Is there anything else?

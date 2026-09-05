@@ -1,0 +1,1 @@
+Read the attached JSON and follow the copilot_prompt field exactly.

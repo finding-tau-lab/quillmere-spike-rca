@@ -1,0 +1,10 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:31] AGENT: Quillmere Service Center, this is Morgan. How can I help?
+[00:41] CALLER: nothing showing under accounts in the app
+[00:53] AGENT: Can you tell me whether the header loads or the whole page is blank?
+[00:57] CALLER: header is tehre balances are blank positions won't load
+[01:02] AGENT: Copy. I can see the accounts on my desktop tool.
+[01:10] CALLER: so it's the app then not my account missing right
+[01:20] CALLER: that's all thanks
+[01:26] AGENT: I noted the profile. Is there anything else?
+[01:34] AGENT: Thank you for calling Quillmere Service Center.

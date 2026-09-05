@@ -1,0 +1,10 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:27] AGENT: Quillmere Service Center, this is Hayden. How can I help?
+[00:33] CALLER: I got in I think but I can't see my statement
+[00:38] AGENT: Can you tell me whether the header loads or the whole page is blank?
+[00:42] CALLER: header is there balances are blank positions won't load
+[00:47] AGENT: Copy. I can see the accounts on my desktop tool.
+[00:51] CALLER: so it's the app then not my account missing right
+[01:03] AGENT: I am documenting this and you should get a callback if it is not restored today.
+[01:07] AGENT: Try the app again later this afternoon and call back if it is still down.
+[01:11] CALLER: that's all thanks

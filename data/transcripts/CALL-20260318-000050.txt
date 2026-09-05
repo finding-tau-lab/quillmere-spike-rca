@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:34] AGENT: Quillmere Service Center, this is Riley. How can I help?
+[00:44] CALLER: question on billing the line item looks off
+[00:54] AGENT: Fee lines post on a cycle. I can note the question for review.
+[00:59] CALLER: alright just wanted it flagged
+[01:05] CALLER: that's all thanks
+[01:10] AGENT: I noted the profile. Is there anything else?
+[01:16] AGENT: Thank you for calling Quillmere Service Center.

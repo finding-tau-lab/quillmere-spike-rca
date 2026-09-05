@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:19] AGENT: Quillmere Service Center, this is Quinn. How can I help?
+[00:28] CALLER: I want to transfer funds to my bank I started it in the app and it stalled
+[00:43] AGENT: I see a transfer request in a pending state. I cannot release it from this line.
+[00:51] CALLER: so I wait? the app just sat there
+[00:59] AGENT: Thank you for calling Quillmere Service Center.
+[01:04] AGENT: Try the app again later this afternoon and call back if it is still down.
+[01:08] AGENT: I noted the profile. Is there anything else?

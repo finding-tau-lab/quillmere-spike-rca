@@ -1,0 +1,8 @@
+[00:00] IVR: Thank you for calling Quillmere Service Center.
+[00:45] AGENT: Quillmere Service Center, this is Jordan. How can I help?
+[00:52] CALLER: just wanted to confirm you have my mobile number
+[01:05] AGENT: I have the profile open. What should I confirm?
+[01:15] CALLER: just that you can reach me if something posts
+[01:26] AGENT: I noted the profile. Is there anything else?
+[01:30] AGENT: Try the app again later this afternoon and call back if it is still down.
+[01:36] AGENT: I am documenting this and you should get a callback if it is not restored today.

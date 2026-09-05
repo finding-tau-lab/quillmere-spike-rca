@@ -1,0 +1,44 @@
+# Case-insensitive substrings that must not appear in this repo
+# except where docs/check_forbidden_terms.py explicitly allow-lists a path+term.
+wells
+wellsfargo
+wellsfargo.com
+wfc
+wim
+teradata
+oracle
+nice nexidia
+nexidia query
+query pack
+schwab
+fidelity
+vanguard
+blackrock
+jpmorgan
+jpm
+chase
+bank of america
+bofa
+citibank
+goldman
+morgan stanley
+ameritrade
+td ameritrade
+e-trade
+etrade
+charles schwab
+1099
+k-1
+k1
+tax season
+april 15
+irs
+ssn
+social security
+slc
+clt
+phx
+salt lake
+charlotte
+phoenix
+denver
