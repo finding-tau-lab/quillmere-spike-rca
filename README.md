@@ -32,7 +32,7 @@ python3 scripts/check_forbidden_terms.py
 python3 scripts/mock_rca.py
 ```
 
-Then attach `output/rca_packet_2026-03-18_Q_DIGITAL_ACCESS.json` to Copilot and paste the one line in `output/ATTACH_THIS.txt`.
+Then open `output/rca_packet_2026-03-18_Q_DIGITAL_ACCESS.json` — that is the packet a reviewer uses to write the 3-bullet RCA.
 
 Seed is `20260318`. Regenerating the corpus is deterministic.
 
