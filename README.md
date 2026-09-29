@@ -1,8 +1,8 @@
 # quillmere-spike-rca
 
-SYNTHETIC DATA. Fictional firm. No affiliation with any financial institution or speech-analytics vendor.
+Replaced a 50-minute manual review of speech-analytics alerts with a burst-sampled packet: 30 calls from the spike window, full transcripts, structured RCA in 12–15 minutes (~70% faster), same-day answer for ops leadership.
 
-Single-day demo of an automated root-cause packet for a **speech-query volume spike** in a fictional wealth contact center (Quillmere Service Center).
+This public repo is a synthetic reconstruction of that method. Fictional firm (Quillmere). No real customer data, no employer code, no vendor affiliation.
 
 What this shows:
 
