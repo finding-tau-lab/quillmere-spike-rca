@@ -8,9 +8,9 @@ What this shows:
 
 1. Ingest Nexidia-style call metadata (demo extract, not a NICE product).
 2. Bucket all calls that day into 5-minute baskets.
-3. Run Kleinberg-style burst detection and sample **from the burst**, not a random 20.
+3. Flag 5-minute bins at ≥ 2× the day’s mean, merge adjacent hot bins, and sample 30 calls from that window — not a random 20.
 4. Pull full transcripts from a warehouse CLOB stand-in (flat files here; optional DuckDB).
-5. Emit one JSON packet a reviewer attaches to Copilot to draft a 3-bullet RCA.
+5. Emit one JSON packet a reviewer uses to write a 3-bullet RCA the same day.
 
 It does **not** ship model output. It does **not** use real customer audio or employer code.
 
